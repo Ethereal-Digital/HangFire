@@ -24,6 +24,7 @@ builder.Services.AddHangfire(configuration => configuration
 builder.Services.AddHangfireServer();
 
 builder.Services.AddScoped<ITestService, TestService>();
+builder.Services.AddScoped<IHangfireService, HangfireService>();
 
 var app = builder.Build();
 
